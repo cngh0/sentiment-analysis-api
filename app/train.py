@@ -8,15 +8,31 @@ import os
 # ---- 数据部分 (保持不变) ----
 data = {
     'text': [
-        'this movie was fantastic, I loved it',
-        'what a horrible film, a complete waste of time',
-        'the acting was superb and the plot was gripping',
-        'I would not recommend this to anyone, it was boring',
-        'an amazing and wonderful experience',
-        'the director is a genius',
-        'I fell asleep halfway through'
+        # --- 10个文本元素 ---
+        'this movie was fantastic, I loved it', # 1
+        'what a horrible film, a complete waste of time', # 2
+        'the acting was superb and the plot was gripping', # 3
+        'I would not recommend this to anyone, it was boring', # 4
+        'an amazing and wonderful experience', # 5
+        'the director is a genius', # 6
+        'I fell asleep halfway through', # 7
+        'This movie was just okay, not great but not terrible either.', # 8
+        'The visual effects were incredible, even if the story was weak.', # 9
+        'A decent film for a Tuesday night.' # 10
     ],
-    'sentiment': ['positive', 'negative', 'positive', 'negative', 'positive', 'positive', 'negative']
+    'sentiment': [
+        # --- 同样是10个标签元素 ---
+        'positive', # 1
+        'negative', # 2
+        'positive', # 3
+        'negative', # 4
+        'positive', # 5
+        'positive', # 6
+        'negative', # 7
+        'negative', # 8
+        'positive', # 9
+        'positive'  # 10
+    ]
 }
 df = pd.DataFrame(data)
 
